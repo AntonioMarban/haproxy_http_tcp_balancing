@@ -1,0 +1,19 @@
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> python -c "import socket; s=socket.socket(); s.connect(('localhost',4000)); s.sendall(b'HELLO\n'); print(s.recv(1024).decode()); s.close()"
+>> 
+OLLEH SRV2
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> python -c "import socket; s=socket.socket(); s.connect(('localhost',4000)); s.sendall(b'HELLO\n'); print(s.recv(1024).decode()); s.close()"
+>>
+OLLEH SRV1
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> python -c "import socket; s=socket.socket(); s.connect(('localhost',4000)); s.sendall(b'HELLO\n'); print(s.recv(1024).decode()); s.close()"
+>>
+OLLEH SRV2
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> python -c "import socket; s=socket.socket(); s.connect(('localhost',4000)); s.sendall(b'HELLO\n'); print(s.recv(1024).decode()); s.close()"
+>>
+OLLEH SRV1
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> python -c "import socket; s=socket.socket(); s.connect(('localhost',4000)); s.sendall(b'HELLO\n'); print(s.recv(1024).decode()); s.close()"
+>>
+OLLEH SRV2

@@ -1,0 +1,133 @@
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello                                                                                 
+   
+                                                                                                                                                                        
+StatusCode        : 200                                                                                                                                                 
+StatusDescription : OK                                                                                                                                                  
+Content           : Hola desde app1                                                                                                                                     
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:28 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app1
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:28 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app2
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:31 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app2
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:31 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app1
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:32 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app1
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:32 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app2
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:33 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app2
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:33 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app1
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:33 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app1
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:33 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app2
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15                                                                                                                                                      Content-Type: text/plain;charset=UTF-8                                                                                                                                  Date: Sun, 09 Nov 2025 12:40:34 GMT                                                                                                                                                                                                                                                                                         
+                    Hola desde app2
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:34 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15
+
+
+
+PS C:\Users\anton\Desktop\plantilla_practica\escenario1> curl http://localhost:80/hello
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hola desde app1
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 15
+                    Content-Type: text/plain;charset=UTF-8
+                    Date: Sun, 09 Nov 2025 12:40:34 GMT
+
+                    Hola desde app1
+Forms             : {}
+Headers           : {[Content-Length, 15], [Content-Type, text/plain;charset=UTF-8], [Date, Sun, 09 Nov 2025 12:40:34 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 15

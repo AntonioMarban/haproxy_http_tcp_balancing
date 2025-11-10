@@ -1,0 +1,257 @@
+PS C:\Users\anton\Desktop\plantilla_practica\escenario2> terraform apply -auto-approve                                           
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
+following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # docker_container.haproxy will be created
+  + resource "docker_container" "haproxy" {
+      + attach                                      = false
+      + bridge                                      = (known after apply)
+      + command                                     = (known after apply)
+      + container_logs                              = (known after apply)
+      + container_read_refresh_timeout_milliseconds = 15000
+      + entrypoint                                  = (known after apply)
+      + env                                         = (known after apply)
+      + exit_code                                   = (known after apply)
+      + hostname                                    = (known after apply)
+      + id                                          = (known after apply)
+      + image                                       = "haproxy_tcp"
+      + init                                        = (known after apply)
+      + ipc_mode                                    = (known after apply)
+      + log_driver                                  = (known after apply)
+      + logs                                        = false
+      + must_run                                    = true
+      + name                                        = "haproxy_tcp"
+      + network_data                                = (known after apply)
+      + network_mode                                = "bridge"
+      + read_only                                   = false
+      + remove_volumes                              = true
+      + restart                                     = "no"
+      + rm                                          = false
+      + runtime                                     = (known after apply)
+      + security_opts                               = (known after apply)
+      + shm_size                                    = (known after apply)
+      + start                                       = true
+      + stdin_open                                  = false
+      + stop_signal                                 = (known after apply)
+      + stop_timeout                                = (known after apply)
+      + tty                                         = false
+      + wait                                        = false
+      + wait_timeout                                = 60
+
+      + healthcheck (known after apply)
+
+      + labels (known after apply)
+
+      + networks_advanced {
+          + aliases      = []
+          + name         = "tcp_network"
+            # (2 unchanged attributes hidden)
+        }
+
+      + ports {
+          + external = 4000
+          + internal = 4000
+          + ip       = "0.0.0.0"
+          + protocol = "tcp"
+        }
+    }
+
+  # docker_container.srv1 will be created
+  + resource "docker_container" "srv1" {
+      + attach                                      = false
+      + bridge                                      = (known after apply)
+      + command                                     = (known after apply)
+      + container_logs                              = (known after apply)
+      + container_read_refresh_timeout_milliseconds = 15000
+      + entrypoint                                  = (known after apply)
+      + env                                         = (known after apply)
+      + exit_code                                   = (known after apply)
+      + hostname                                    = (known after apply)
+      + id                                          = (known after apply)
+      + image                                       = "srv1"
+      + init                                        = (known after apply)
+      + ipc_mode                                    = (known after apply)
+      + log_driver                                  = (known after apply)
+      + logs                                        = false
+      + must_run                                    = true
+      + name                                        = "srv1"
+      + network_data                                = (known after apply)
+      + network_mode                                = "bridge"
+      + read_only                                   = false
+      + remove_volumes                              = true
+      + restart                                     = "no"
+      + rm                                          = false
+      + runtime                                     = (known after apply)
+      + security_opts                               = (known after apply)
+      + shm_size                                    = (known after apply)
+      + start                                       = true
+      + stdin_open                                  = false
+      + stop_signal                                 = (known after apply)
+      + stop_timeout                                = (known after apply)
+      + tty                                         = false
+      + wait                                        = false
+      + wait_timeout                                = 60
+
+      + healthcheck (known after apply)
+
+      + labels (known after apply)
+
+      + networks_advanced {
+          + aliases      = []
+          + name         = "tcp_network"
+            # (2 unchanged attributes hidden)
+        }
+
+      + ports {
+          + external = (known after apply)
+          + internal = 5000
+          + ip       = "0.0.0.0"
+          + protocol = "tcp"
+        }
+    }
+
+  # docker_container.srv2 will be created
+  + resource "docker_container" "srv2" {
+      + attach                                      = false
+      + bridge                                      = (known after apply)
+      + command                                     = (known after apply)
+      + container_logs                              = (known after apply)
+      + container_read_refresh_timeout_milliseconds = 15000
+      + entrypoint                                  = (known after apply)
+      + env                                         = (known after apply)
+      + exit_code                                   = (known after apply)
+      + hostname                                    = (known after apply)
+      + id                                          = (known after apply)
+      + image                                       = "srv2"
+      + init                                        = (known after apply)
+      + ipc_mode                                    = (known after apply)
+      + log_driver                                  = (known after apply)
+      + logs                                        = false
+      + must_run                                    = true
+      + name                                        = "srv2"
+      + network_data                                = (known after apply)
+      + network_mode                                = "bridge"
+      + read_only                                   = false
+      + remove_volumes                              = true
+      + restart                                     = "no"
+      + rm                                          = false
+      + runtime                                     = (known after apply)
+      + security_opts                               = (known after apply)
+      + shm_size                                    = (known after apply)
+      + start                                       = true
+      + stdin_open                                  = false
+      + stop_signal                                 = (known after apply)
+      + stop_timeout                                = (known after apply)
+      + tty                                         = false
+      + wait                                        = false
+      + wait_timeout                                = 60
+
+      + healthcheck (known after apply)
+
+      + labels (known after apply)
+
+      + networks_advanced {
+          + aliases      = []
+          + name         = "tcp_network"
+            # (2 unchanged attributes hidden)
+        }
+
+      + ports {
+          + external = (known after apply)
+          + internal = 5000
+          + ip       = "0.0.0.0"
+          + protocol = "tcp"
+        }
+    }
+
+  # docker_image.haproxy will be created
+  + resource "docker_image" "haproxy" {
+      + id          = (known after apply)
+      + image_id    = (known after apply)
+      + name        = "haproxy_tcp"
+      + repo_digest = (known after apply)
+
+      + build {
+          + cache_from     = []
+          + context        = "./haproxy"
+          + dockerfile     = "Dockerfile"
+          + extra_hosts    = []
+          + remove         = true
+          + security_opt   = []
+          + tag            = []
+            # (13 unchanged attributes hidden)
+        }
+    }
+
+  # docker_image.srv1 will be created
+  + resource "docker_image" "srv1" {
+      + id          = (known after apply)
+      + image_id    = (known after apply)
+      + name        = "srv1"
+      + repo_digest = (known after apply)
+
+      + build {
+          + cache_from     = []
+          + context        = "./srv1"
+          + dockerfile     = "Dockerfile"
+          + extra_hosts    = []
+          + remove         = true
+          + security_opt   = []
+          + tag            = []
+            # (13 unchanged attributes hidden)
+        }
+    }
+
+  # docker_image.srv2 will be created
+  + resource "docker_image" "srv2" {
+      + id          = (known after apply)
+      + image_id    = (known after apply)
+      + name        = "srv2"
+      + repo_digest = (known after apply)
+
+      + build {
+          + cache_from     = []
+          + context        = "./srv2"
+          + dockerfile     = "Dockerfile"
+          + extra_hosts    = []
+          + remove         = true
+          + security_opt   = []
+          + tag            = []
+            # (13 unchanged attributes hidden)
+        }
+    }
+
+  # docker_network.net will be created
+  + resource "docker_network" "net" {
+      + driver      = (known after apply)
+      + id          = (known after apply)
+      + internal    = (known after apply)
+      + ipam_driver = "default"
+      + name        = "tcp_network"
+      + options     = (known after apply)
+      + scope       = (known after apply)
+
+      + ipam_config (known after apply)
+    }
+
+Plan: 7 to add, 0 to change, 0 to destroy.
+docker_network.net: Creating...
+docker_image.haproxy: Creating...
+docker_image.srv2: Creating...
+docker_image.srv1: Creating...
+docker_image.haproxy: Creation complete after 2s [id=sha256:079f432d7cde853ffdc8d88339a73531066b3234eec2a13a53e2df607a4acb8chaproxy_tcp]
+docker_network.net: Creation complete after 2s [id=64641077b624df5d43b251956e090062a9094b243e1f2658047fb4d783f10e72]
+docker_image.srv1: Creation complete after 5s [id=sha256:fe12dfa4e4152e80710b960ffa118106d35be92cd2085e515d66fb027bb7d470srv1]
+docker_container.srv1: Creating...
+docker_image.srv2: Creation complete after 5s [id=sha256:d8c190a89ae274c3fad7d883cc0a0cd54b3fd0a1bf9c1154d2944d231b7701bfsrv2]
+docker_container.srv2: Creating...
+docker_container.srv1: Creation complete after 2s [id=914f1016c2e934f2fbdccfb090d7ee6092eee0252bf471ed06959e0f7374160c]
+docker_container.srv2: Creation complete after 2s [id=152c409b96e05485d143ae64cb51cabb02c3f1d8fd43d400a9ef1dc1f69a65f8]
+docker_container.haproxy: Creating...
+docker_container.haproxy: Creation complete after 1s [id=5e687567617f95c3ec735c8ae5a6ecdbd10e964c128d2cdfe8d5ca60ccd3572b]
+
+Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
